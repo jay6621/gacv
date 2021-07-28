@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>GACV</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Customer Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item active"><a class="nav-link" href="academics.html">Academics</a></li>
+						
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Research</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="dgr.html">DG Research</a>
+								<a class="dropdown-item" href="rsbk.html">RSBK Research</a>
+							</div>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Facilities</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="f-acad.html">Academic</a>
+								<a class="dropdown-item" href="f-clinical.html">Clinical</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="activities-awards.html">Awards & Activities</a></li>
+						<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                      <!--   <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Book Now</span></a></li> -->
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>List of GACV's Departments<span class="m_1"></span></h1>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <p class="lead">These are the various departments available at GACV, to get more information please click on the titles below.</p>
+                </div>
+            </div><!-- end title -->
+
+            <hr class="invis"> 
+
+            <div class="row"> 
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#dss" title="">Department of Samhita & Siddhanta</a></h2>
+							</div>
+							
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+
+				<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#drs" title="">Department of Rachana Sharir</a></h2>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div><!-- end col -->
+				
+				<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#dks" title="">Department of Kriya Sharir</a></h2>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div><!-- end col -->
+				
+				<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#udd" title="">Upgraded department of Dravyaguna</a></h2>
+							</div>
+							
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->			
+			
+			<hr class="hr3"> 
+
+			<div class="row"> 
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#udrbk" title="">Upgraded Department of Rasashastra and Bhaishajya Kalpana</a></h2>
+							</div>
+							
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+
+				<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#drnevv" title="">Department of Roga Nidana Evam Vikriti Vigyana </a></h2>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div><!-- end col -->
+				
+				<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#doag" title="">Department of Agadtantra</a></h2>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div><!-- end col -->
+				
+				<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#dosw" title="">Department of Swasthavritta</a></h2>
+							</div>
+							
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+            
+			<hr class="hr3"> 
+			<div class="row"> 
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#dopst" title="">Department of Prasutitantra evam Streeroga </a></h2>
+							</div>
+							
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+
+				<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#kaumar" title="">Department of Kaumarbhritya</a></h2>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div><!-- end col -->
+				
+				<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#kaya" title="">Department of Kayachikitsa</a></h2>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div><!-- end col -->
+				
+				<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#panch" title="">Department of Panchakarma</a></h2>
+							</div>
+							
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+			</div><!-- end row -->
+			
+			<hr class="hr3">
+			<div class="row"> 
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#shalya" title="">Department of Shalyatantra</a></h2>
+							</div>
+							
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+
+				<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#shala" title="">Department of Shalakyatantra </a></h2>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div><!-- end col -->
+				
+			</div><!-- end row -->
+			<hr class="hr3">
+			<hr class="hr3">
+			
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+	<div id="overviews" class="section wb">
+        <div class="container" >
+            <div class="row"> 
+                <div class="col-lg-12 blog-post-single">
+                    <div class="blog-item">
+					<!--	<div class="image-blog">
+							<img src="images/blog_single.jpg" alt="" class="img-fluid">
+						</div> -->
+						<div class="post-content" >
+														
+							<div class="blog-title" id="dss" >
+								<h2>Department of Samhita & Siddhanta</h2>
+							</div>
+							<div class="blog-desc">
+								<p> Ayurveda is an ancient science of Indigenous medicine; it is special in respect that it is not only a medical science but an Art of Living in Human being. This department is concerned with basic principles of Ayurveda which are described in classical texts i.e. Ayurved Samhita. Samhita are in Sanskrit language which is a divine language, hence to understand the Samhita in their true meanings Sanskrit is also taught by this department along with Samhita (classical texts) in detail.</p>
+								<h2>Vision</h2>
+								<p>• To prove the applicability of classical texts & basic principles in today’s era. </p>
+								<h2>Mission</h2>
+								<p>• To explore the traditional knowledge on scientific basis. </p>
+								<blockquote class="default">
+									<h2>Features</h2>
+									• Computer and internet facility • LCD projector for improved teaching and learning purpose • Departmental library, Museum having various Models and Charts
+								</blockquote>
+							</div>							
+						</div>
+					</div>
+				</div><!-- end col -->
+				
+            </div><!-- end row -->
+		</div><!-- end container -->
+		
+		<div class="container" >
+            <div class="row"> 
+                <div class="col-lg-12 blog-post-single">
+                    <div class="blog-item">
+					<!--	<div class="image-blog">
+							<img src="images/blog_single.jpg" alt="" class="img-fluid">
+						</div> -->
+						<div class="post-content" >
+														
+							<div class="blog-title" id="drs" >
+								<h2>Department of Rachana Sharir</h2>
+							</div>
+							<div class="blog-desc">
+								<p> Rachana Sharir is one among the basic subject of First year curriculum. This subject deals with comprehensive knowledge of structures of human body which is essential for the future growing doctors.</p>
+								<h2>Vision</h2>
+								<p>• To provide contemporary and ancient conceptual knowledge of the subject to the students and strengthening their foundation of basic principles for future clinical practice.</p>
+								<p><h2>Mission</h2> 
+									• To provide conceptual knowledge of Samhita in an interesting manner with various digital aid.
+								</p>
+								<p>• Clear the concepts by means of virtual dissection to improvise the quality of cadaveric dissection.</p>							
+								<p>• Use the new techniques of model preparation, specimen preparation to enrich the Museum.</p>
+								<blockquote class="default">
+									<h2>Features</h2> 
+										• Department is equipped with well-developed Dissection Hall having Mercury and Body section Machine, departmental library and museum which Charts (Laminated, Digital and rexine.), Models and various Specimen which are used as learning resource material.
+								</blockquote>
+							</div>							
+						</div>
+					</div>
+				</div><!-- end col -->
+				
+            </div><!-- end row -->
+		</div><!-- end container -->
+
+		<div class="container">
+				<div class="row"> 
+					<div class="col-lg-12 blog-post-single">
+						<div class="blog-item">
+							
+							<div class="post-content">
+															
+								<div class="blog-title" id="dks">
+									<h2> Department of Kriya Sharir </h2>
+								</div>
+								<div class="blog-desc">
+									<p> “Sharir Kriya” department deals with complete knowledge of normal functioning of the human body according to Ayurveda as well as modern context Study of Kriya Sharir subject. </p>
+									<h2>Vision</h2>
+									<p> • To explore the methods of learning and discovering new knowledge from ancient concept of Kriya Sharir.</p>
+									<h2>Mission</h2>
+									<p>• To provide complete knowledge of physiology to students according to Ayurveda and modern context.</p>
+									<p>• To enlighten the students with practical implementation of physiological concepts in day to day learning.</p>							
+									<blockquote class="default">
+										<h2>Features</h2>
+										• Computer and internet facility • LCD projector for improved teaching and learning purpose • Departmental library and Museum having various Models and Charts
+									</blockquote>
+								</div>							
+							</div>
+						</div>
+					</div><!-- end col -->
+					
+				</div><!-- end row -->
+		</div><!-- end container -->
+			
+		<div class="container">
+			<div class="row"> 
+				<div class="col-lg-12 blog-post-single">
+					<div class="blog-item">
+						
+						<div class="post-content">
+														
+							<div class="blog-title" id="udd">
+								<h2> Upgraded department of Dravyaguna </h2>
+							</div>
+							<div class="blog-desc">
+								<p> This institution’s one of the upgraded Department enables with the PG studies effective from 2016. The Department is highly energetic and exhibited the performance by various ways.  The department deals with the Materia Medica and Pharmacology. It is engaged with the classical principles of Therapeutic Applications, Identification, Experimentations of medicinal plants & their scientific validation in correlation with the classical wealth of Ayurveda. It is continuously nurturing the students by imparting quality education at UG as well as PG level and exposing the disciples through the knowledge of interdisciplinary understandings with practical demonstration. </p>
+								<h2>Vision</h2>
+								<p>• To prepare the Scholars and students by imbibing the knowledge of clinical application through Medicinal plants and understanding the Ayurvedic pharmacology </p>
+								<h2>Mission</h2>
+								<p>• Exposing the scholars to the current comprehensive knowledge and skills in Ayurveda, Pharmacology and Pharmacognosy, etc. 
+								</p>
+								<p>• Identifying and entering into the areas of research in Clinical Application, Standardization and exploring the area of novel agro-technologies </p>							
+								<p>• Initiating to grow the Medicinal plants to shred down the Global warming and uplifting the Ayurveda through the use of the same. </p>
+								<p>• Giving the platform to the Young Generation for scientific demonstration, participation in Seminar, Symposium, Workshops, etc.</p>
+								<p>• Collaborative research with verities of concerned institutions to explore novel methodologies.</p>
+								<p>• Development of Garden, Collections of herbarium and dry samples for referral standards and Upgrade the Department for higher education.</p>
+							
+								<blockquote class="default">
+									<h2>Features</h2>
+									• Department is equipped with well-developed Dissection Hall having Mercury and Body section Machine, departmental library and museum which Charts (Laminated, Digital and rexine.), Models and various Specimen which are used as learning resource material.
+								</blockquote>
+							</div>							
+						</div>
+					</div>
+				</div><!-- end col -->
+				
+			</div><!-- end row -->
+		</div><!-- end container -->	
+		
+		<div class="container">
+			<div class="row"> 
+				<div class="col-lg-12 blog-post-single">
+					<div class="blog-item">
+						
+						<div class="post-content">
+														
+							<div class="blog-title" id="udrbk">
+								<h2> Upgraded Department of Rasashastra and Bhaishajya Kalpana </h2>
+							</div>
+							<div class="blog-desc">
+								<p> Department of Rasashastra and Bhaishajya Kalpana deal with the preparation of herbal, herbo – mineral and herbo – metallic medicines. It inculcates the theoretical and practical knowledge of Ayurvedic pharmaceutics to under graduate and post graduate students. Department offers PG course since 2016 with the intake capacity of 5 students per year.   </p>
+								<h2>Vision</h2>
+								<p>• Creating a positive academic environment through effective teaching and learning that gives innovative research ideas and develops professional skill amongst students. </p>
+								<h2>Mission</h2>
+								<p>• To revalidate and establish the fundamental principles of Ayurvedic pharmaceutics though scientific approaches.</p>
+								<p>• To motivate quality research in formulation development in collaboration with various renown research institutes and industries </p>
+								<p>• To develop interest in students for the subject through implementing modern pedagogical methods. </p>
+								<p>• To develop lab scale to industrial scale procedure with use of manual and mechanized machinery without altered basic principles. </p>
+								<blockquote class="default">
+									<h2>Features</h2>
+									<p>• The Museum of department is having 113 Charts, 18 Models and 150 Specimen, which are used as learning resource material. </p>
+									<p>• Department library has 881 books. </p>
+									<h3>• Pharmaceutical laboratory:</h3>
+									<p>The department has separate well equipped pharmaceutical laboratories having sufficient quantity of instruments and equipments mentioned in MSR of CCIM for UG and PG students. </p>
+									<p>• Departmental Quality control Laboratory is equipped with advanced analytical instruments. Preliminary profile for drugs of the research works have been developed here.   </p>
+									<h3>• Departmental Teaching pharmacy: </h3>
+									<p>The Department is attached with the GMP certified Government Ayurved Pharmacy, Vadodara where more than 60 products are prepared regularly. Pharmacy duty has been allotted to PG scholars for the exploration of large scale manufacturing of medicines and regulatory guidelines. </p>
+									<h3>• Museum: </h3>
+									<p>The department has well maintained museum containing all necessary specimens of herbal drugs, metals, minerals, gems, classical models, instruments and equipment. </p>
+								</blockquote>
+							</div>							
+						</div>
+					</div>
+				</div><!-- end col -->
+				
+			</div><!-- end row -->
+		</div><!-- end container -->
+
+		<div class="container">
+			<div class="row"> 
+				<div class="col-lg-12 blog-post-single">
+					<div class="blog-item">
+						
+						<div class="post-content">
+														
+							<div class="blog-title" id="drnevv">
+								<h2> Department of Roga Nidana Evam Vikriti Vigyana  </h2>
+							</div>
+							<div class="blog-desc">
+								<p> The department primarily deals with the diagnostic procedure according to ancient methods including Nadi pareeksha (Pulse Diagnosis), methodical examination of the body by classical ways and also adopts contemporary diagnostic tools for the authoritative diagnosis of the Patient. Roga Nidana (Ayurvedic Diagnostics) subject, taught to the 2nd BAMS students. </p>
+								<h2>Vision</h2>
+								<p>• To develop clinical skills among students, which help them to rely upon minimum on the expensive modern investigative procedures and help the society / patients to get rid of their illness with accurate treatment. </p>
+								<h2>Mission</h2>
+								<p>• To explore Ayurveda Pathology Concepts with clinical examination and diagnostic methods incorporating the modern techniques.</p>
+								<blockquote class="default">
+									<h2>Features</h2>
+									<p>• Pathology Laboratory with availability of latest instruments like Haematology Automated Cell Counter and Biochemistry Analyser is functional under the department.</p>
+									<p>• The department also possesses various Models of pathology and Charts with latest Ayurveda and Modern Text Books.</p>
+									<p>• Departmental laboratory for students is equipped with Binocular Microscopes and other requisite Instruments as per the CCIM Norms for individual training.</p>
+								</blockquote>
+							</div>							
+						</div>
+					</div>
+				</div><!-- end col -->
+				
+			</div><!-- end row -->
+		</div><!-- end container -->
+
+		<div class="container">
+			<div class="row"> 
+				<div class="col-lg-12 blog-post-single">
+					<div class="blog-item">
+						
+						<div class="post-content">
+														
+							<div class="blog-title" id="doag">
+								<h2> Department of Agadtantra </h2>
+							</div>
+							<div class="blog-desc">
+								<p> Agadtantra is one of the eight branches of Ayurveda. The department deals with the knowledge of Agada i.e. Vishavirodhi Dravya, Management of poisoning, Medical aspect of Law & Legal aspect of Medical field Toxicology, Forensic Science and Medical Jurisprudence.  </p>
+								<h2>Vision</h2>
+								<p>• To prepare Ayurveda students for their Medical, Legal & Social duties in Medical Profession.  </p>
+								<h2>Mission</h2>
+								<p>• To make the Ayurveda graduates capable of making observations and inferring conclusion about Medico-legal responsibilities during the practice of medicine. </p>
+								<blockquote class="default">
+									<h2>Features</h2>
+									<p>• The department is equipped with Charts, Model, Weapon set and 100 Poison specimens.</p>
+									<p>• In Departmental Library, different kinds of subject related books are available as students can take more applied knowledge.</p>
+									<p>• The department conducts regular Post Mortem visit at SSG Government College & Hospital, District Civil & Criminal Court, Vadodara for practical & updated knowledge of subject.</p>
+								</blockquote>
+							</div>							
+						</div>
+					</div>
+				</div><!-- end col -->
+				
+			</div><!-- end row -->
+		</div><!-- end container -->
+
+		<div class="container">
+			<div class="row"> 
+				<div class="col-lg-12 blog-post-single">
+					<div class="blog-item">
+						
+						<div class="post-content">
+														
+							<div class="blog-title" id="dosw">
+								<h2> Department of Swasthavritta </h2>
+							</div>
+							<div class="blog-desc">
+								<p> Ayurveda, the science of living, which has the primary aim as to preserve the health of healthy individual laid down all the preventive principles which are necessary in maintenance of health under the subject Swasthavritta, which is known as Preventive and Social Medicine or Community Medicine in modern medical science. Swasthavritta and yoga is one among the basic subject of third year curriculum. This subject deals with comprehensive knowledge of healthy living, which is essential for the future growing doctors.  </p>
+								<h2>Vision</h2>
+								<p>• To improve the health of the communities, including rural, underserved, and global populations through the basic principles of Swasthavritta and Yoga education </p>
+								<h2>Mission</h2>
+								<p>• To provide ancient and contemporary conceptual knowledge of Swasthavritta and Yoga to Ayurved scholars in an interesting manner with various digital aids. </p>
+								<p>• To provide thoroughgoing exposure to the students with field survey and demonstration by educational visits. </p>
+								<p>• To aware the students about national health programmes and encourage them to participate in in the dissemination of the benefits to the people. </p>
+								<p>• To understand and practice principles of Ayurveda diet system  and Yoga & Naturopathy. </p>
+								<blockquote class="default">
+									<h2>Features</h2>
+									• All Modern infrastructure and facilities
+								</blockquote>
+							</div>							
+						</div>
+					</div>
+				</div><!-- end col -->
+				
+			</div><!-- end row -->
+		</div><!-- end container -->
+
+		<div class="container">
+			<div class="row"> 
+				<div class="col-lg-12 blog-post-single">
+					<div class="blog-item">
+						
+						<div class="post-content">
+														
+							<div class="blog-title" id="dopst">
+								<h2> Department of Prasutitantra evam Streeroga  </h2>
+							</div>
+							<div class="blog-desc">
+								<p> Prasutitantra evum Streeroga is an important clinical department for any Ayurveda institute. This subject is mainly divided into two major parts. Prasutitantra part deals with pre conception, pre natal, intra-natal and post natal care, while Streeroga part includes various diseases of female reproductive system.  </p>
+								<h2>Vision</h2>
+								<p>• To ensure complete health of the female and thereby healthy progeny. </p>
+								<h2>Mission</h2>
+								<p>• To prepare UG students well competent and skillful in Prasutitantra and Streeroga. </p>
+								<p>• To Popularize and promote Ayurveda care in Prasutitantra and Streeroga. </p>
+								<p>• To provide benefits of Ayurveda  Garbhini paricharya  </p>
+								<p>• To provide special Ayurveda care during important phases of female like adolescence, pregnancy and menopause </p>
+								<blockquote class="default">
+									<h2>Features</h2>
+									<p>• The department has covered the area as per CCIM norms. It is equipped with various Charts, Model like female bony pelvis, fetal skull etc. and Instrument for demonstration</p>
+									<p>• Library facility is available in the department. </p>
+									<p>• The department conducts regular visits at Allopathy hospital, Vadodara for the advancement and integrated knowledge. </p>
+									<p>• Department is having regular Prasutitantra evam Streeroga OPD on Monday to Saturday and department provides IPD facilities for indoor patients.</p>
+									<p>• Garbhasanskara (Pre conception & Prenatal care), Sutika paricharya, & gynecological procedures for both OPD & IPD patients</p>
+								</blockquote>
+							</div>							
+						</div>
+					</div>
+				</div><!-- end col -->
+				
+			</div><!-- end row -->
+		</div><!-- end container -->
+
+		<div class="container">
+			<div class="row"> 
+				<div class="col-lg-12 blog-post-single">
+					<div class="blog-item">
+						
+						<div class="post-content">
+														
+							<div class="blog-title" id="kaumar">
+								<h2> Department of Kaumarbhritya </h2>
+							</div>
+							<div class="blog-desc">
+								<p> The department is a clinical department dealing with hospital and academic activities. This is one among the eight branches of Ayurveda, dealing with rearing and treatment of children. </p>
+								<h2>Vision</h2>
+								<p>• To give training to undergraduate students to cater the health needs of the children. </p>
+								<h2>Mission</h2>
+								<p>• To provide Ayurved remedies to boost up immunity, intellect and overall growth and development of children by special initiatives like Suvarnaprashana and other Lehana remedies. </p>
+								<blockquote class="default">
+									<h2>Features</h2>
+									<p>• The department has 31 books and 30 Charts. For clinical training of undergraduate students this department is having OPD facility, pediatric Panchakarma facility and allotted beds. </p>
+									<p>• Department has 10 bed in in-patients unit to provide pediatric Panchakarma  for cases of developmental disabilities, cerebral palsy, epilepsy and various other pediatric diseases.</p>
+								</blockquote>
+							</div>							
+						</div>
+					</div>
+				</div><!-- end col -->
+				
+			</div><!-- end row -->
+		</div><!-- end container -->
+
+		<div class="container">
+			<div class="row"> 
+				<div class="col-lg-12 blog-post-single">
+					<div class="blog-item">
+						
+						<div class="post-content">
+														
+							<div class="blog-title" id="kaya">
+								<h2> Department of Kayachikitsa </h2>
+							</div>
+							<div class="blog-desc">
+								<p> Kayachikitsa department, also commonly known as General Medicine department, is one of the prime clinical subjects of Ayurveda. In this department, well qualified and experienced faculty members work with dedication.  </p>
+								<h2>Vision</h2>
+								<p>• To provide excellent clinical knowledge to the emerging vaidyas so that patients receive excellent treatment.  </p>
+								<h2>Mission</h2>
+								<p>• To run super specialty clinics for diseases of various systems. </p>
+								<p>• To start PG and Ph.D. courses for the enhancement of research activities.	 </p>
+								<p>• To conduct RoTPs (Regular Officer Training Programs), CMEs (Continuous Medical Education programs) and various research projects to establish standard treatment protocols for all systemic disorders. </p>
+								<p>• To establish mode of action and role of active ingredient in the treatment.  </p>
+								<p>• Emergency treatment development for common emergencies is also future prospect. </p>
+								<blockquote class="default">
+									<h2>Features</h2>
+									<p>• It is a well-equipped department and has all the facilities required as per Gujarat Ayurved University and CCIM norms like instruments, charts, books, overhead projector etc. for effective learning for students.</p>
+									<p>• It has flourishing out-door and in-door patient departments which provide holistic treatment of diseases related to various systems like: Nervous system, gastro-intestinal system, respiratory system, cardiovascular system, musculoskeletal system, dermatology, urinary system, reproductive system, endocrinology, psychiatry, life style disorders etc. It also provides Rasayana and Vajikarana therapies. </p>								
+								</blockquote>
+							</div>							
+						</div>
+					</div>
+				</div><!-- end col -->
+				
+			</div><!-- end row -->
+		</div><!-- end container -->
+
+		<div class="container">
+			<div class="row"> 
+				<div class="col-lg-12 blog-post-single">
+					<div class="blog-item">
+						
+						<div class="post-content">
+														
+							<div class="blog-title" id="panch">
+								<h2> Department of Panchakarma </h2>
+							</div>
+							<div class="blog-desc">
+								<p> Panchakarma is a branch of Ayurveda which is beneficial to both healthy and diseased person. It is mainly Shodhana (Purifying) therapy which includes Vamana (Medicated Emesis), Virechana (Medicated Purgation), Basti (Medicated enema), Nasya (Nasal Therapy), Raktamokshana (Blood-letting). Beside Shodhana Karma (purification) these Karma find many solutions of unsolved health issues. Being the main line of treatment in almost all the diseases Panchakarma encroaches all the eight parts of Astanga Ayurveda i.e. Kaya (Medicine), Bala (Pedia), Graha, Shalya (Surgery), Shalakya (ENT), Agada (Toxicology), Rasayana (Rejuvenation) and Vajikarana (Aphrodisiacs). Because of its extra ordinary results, Panchakarma is said to be Backbone of Ayurveda which eradicates the root of disease. </p>
+								<h2>Vision</h2>
+								<p>• To provide best education which create talented students who can become best academician, physicians and researchers in the field of Panchakarma. </p>
+								<h2>Mission</h2>
+								<p>• To provide best quality treatment of Panchakarma to the patients. </p>
+								<p>• To provide supportive environment to students as well as to the patients that rewards excellence. </p>
+								<p>• To achieve the mandate in area of improvement of educational standards according to ministry of Ayush. </p>
+								<p>• To undertake various research activities for welfare of mankind. </p>
+								<blockquote class="default">
+									<h2>Features</h2>
+									<p>• Department occupies the area of 43 sq. mt. and well equipped with charts, models and departmental library.</p>
+									<p>• In the hospital Panchakarma theatre is in area of 350 square meter and very well equipped with all the necessary equipment of Panchakarma with Separate rooms for all the karma, as well as special rooms for male and female. </p>
+								</blockquote>
+							</div>							
+						</div>
+					</div>
+				</div><!-- end col -->
+				
+			</div><!-- end row -->
+		</div><!-- end container -->
+
+		<div class="container">
+			<div class="row"> 
+				<div class="col-lg-12 blog-post-single">
+					<div class="blog-item">
+						
+						<div class="post-content">
+														
+							<div class="blog-title" id="shala">
+								<h2> Department of Shalyatantra </h2>
+							</div>
+							<div class="blog-desc">
+								<p> Shalya is main specialty of Ashtanga Ayurveda mainly dealing with the Shotha (inflammation) and Vrana (wound) related diseases and uses of different Yantra and Shastra (Instruments). </p>
+								<h2>Vision</h2>
+								<p>• To develop highly skilled graduates in the field of Shalyatantra with proper knowledge of surgical and para – surgical procedures. </p>
+								<h2>Mission</h2>
+								<p>• To provide service to community which are suffering from ano rectal disorders such as Bhagandara, piles, fissure and polyp with the help of Ksharasutra. </p>
+								<p>• To explore the knowledge of unique classical procedures like Agnikarma, Raktamokshana and Leech application to as many people as possible. </p>
+								<blockquote class="default">
+									<h2>Features</h2>
+									<p>• The department is having 13 beds in IPD, one OPD room, Dressing room, minor OT and well equipped major OT with autoclave, fumigation facilities, recovery room and doctors’ duty room.</p>
+									<p>• The Museum of department is having Charts, Models, Equipments and clinical material as per the CCIM norms. </p>
+									<p>• Available operative facilities: minor surgical procedures like; suturing, removal of foreign body, removal of cyst, lipoma etc. and major surgical procedures i..e. ano – rectal and other  surgeries. </p>
+								</blockquote>
+							</div>							
+						</div>
+					</div>
+				</div><!-- end col -->
+				
+			</div><!-- end row -->
+		</div><!-- end container -->
+
+
+
+	</div><!-- end section -->
+   
+
+
+
+	<div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2021 &nbsp;&nbsp;<a href="#">GACV</a> &nbsp;&nbsp;&nbsp;&nbsp;Design By : <a href="https://tatvatechnovation.co.in/">Tatva</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

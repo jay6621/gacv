@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>GACV</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header tit-up">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Customer Login</h4>
+				</div>
+				<div class="modal-body customer-box">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs">
+						<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+						<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div class="tab-pane active" id="Login">
+							<form role="form" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="email1" placeholder="Name" type="text">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="exampleInputPassword1" placeholder="Email"
+											type="email">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-10">
+										<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+											Submit
+										</button>
+										<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="tab-pane" id="Registration">
+							<form role="form" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" placeholder="Name" type="text">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="email" placeholder="Email" type="email">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="password" placeholder="Password"
+											type="password">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-10">
+										<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+											Save &amp; Continue
+										</button>
+										<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+											Cancel</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->
+
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+					aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a"
+								data-toggle="dropdown">Research</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="dgr.html">DG Research</a>
+								<a class="dropdown-item" href="rsbk.html">RSBK Research</a>
+							</div>
+						</li>
+
+						<li class="nav-item active dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a"
+								data-toggle="dropdown">Facilities</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="f-acad.html">Academic</a>
+								<a class="dropdown-item" href="f-clinical.html">Clinical</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="activities-awards.html">Awards & Activities</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<!--   <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Book Now</span></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>Academic Facilities of GACV<span class="m_1"></span></h1>
+		</div>
+	</div>
+
+	<div id="overviews" class="section wb">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 blog-post-single">
+					<div class="blog-item">
+						<div class="image-blog">
+							<img src="images/library.JPG" alt="" class="img-fluid">
+						</div>
+						<div class="post-content">
+							<hr class="hr3">
+							<div class="blog-title">
+								<h1>Library</h1>
+							</div>
+
+							<div class="blog-desc">
+
+								<blockquote class="default">
+									The Library of was established in 1956, and is situated in the Government Ayurved
+									College - Vadodara. Library having more than 10,000 books of different subjects such
+									as Rachna Sharir, Shamita, Rog Nidan, Shalakya, Kaya Chikitsa, Kaumarabhritya,
+									Swasthvritta, Panchkarma, Dravaguna, Ras Shastra, Shalyatantra, SRPT, Kriya Sharir
+									and Agadtantra and nearly 300 journals/ periodicals/ magazines. Library is
+									complemented with a 14 of Departmental Libraries. The library a created learning
+									environment by providing accession of library materials , library resources, Reading
+									facility, Wi-Fi facility. All the library facilities are open to all the members of
+									the College and Hospital. The primary objective of the library is to support the
+									college in creating a research-based learning space. The library remains open on all
+									days, all through the year from 9.00 am to 5.00 pm, except on Sundays and public
+									holidays declared by the institution.
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div><!-- end col -->
+
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</div><!-- end section -->
+	<hr class="hr3">
+
+	<div id="overviews" class="section wb">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 blog-post-single">
+					<div class="blog-item">
+						<div class="image-blog">
+							<img src="images/garden.JPG" alt="" class="img-fluid">
+						</div>
+						<div class="post-content">
+							<hr class="hr3">
+							<div class="blog-title">
+								<h1>Herbal Garden</h1>
+							</div>
+
+							<div class="blog-desc">
+
+								<blockquote class="default">
+									<p>A botanical garden conserved with medicinal plants of various habitats is
+										attached to this department covering 4000 sq. feet land area approximately.
+										Botanical garden is enriched with 1372 total species which includes 225
+										climbers, 872 herbs, 219 tree and 56 shrubs.</p>
+
+									<p>Year 2019-20 </p>
+									<table style="width: 40.3659%;">
+										<tbody>
+											<tr>
+												<td style="width: 10%;">
+													<p><strong>Plants</strong></p>
+												</td>
+												<td style="width: 13%;">
+													<p><strong>Total no of plants</strong></p>
+												</td>
+												<td style="width: 13.3659%;">
+													<p><strong>Total no of Species</strong></p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 10%;">
+													<p>Climber</p>
+												</td>
+												<td style="width: 13%;">
+													<p>43</p>
+												</td>
+												<td style="width: 13.3659%;">
+													<p>227</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 10%;">
+													<p>Herb</p>
+												</td>
+												<td style="width: 13%;">
+													<p>105</p>
+												</td>
+												<td style="width: 13.3659%;">
+													<p>844</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 10%;">
+													<p>Tree</p>
+												</td>
+												<td style="width: 13%;">
+													<p>111</p>
+												</td>
+												<td style="width: 13.3659%;">
+													<p>207</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 10%;">
+													<p>Shrub</p>
+												</td>
+												<td style="width: 13%;">
+													<p>21</p>
+												</td>
+												<td style="width: 13.3659%;">
+													<p>67</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 10%;">
+													<p>Total</p>
+												</td>
+												<td style="width: 13%;">
+													<p>280</p>
+												</td>
+												<td style="width: 13.3659%;">
+													<p>1345</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<p>&nbsp;</p>
+									<p>Year 2020-21 (as on date 08-01-2021)</p>
+									<table style="width: 37.189%;">
+										<tbody>
+											<tr>
+												<td style="width: 10%;">
+													<p><strong>Plants</strong></p>
+												</td>
+												<td style="width: 13%;">
+													<p><strong>Total no of plants </strong></p>
+												</td>
+												<td style="width: 12.189%;">
+													<p><strong>Total no of Species</strong></p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 10%;">
+													<p>Climber</p>
+												</td>
+												<td style="width: 13%;">
+													<p>43</p>
+												</td>
+												<td style="width: 12.189%;">
+													<p>225</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 10%;">
+													<p>Herb</p>
+												</td>
+												<td style="width: 13%;">
+													<p>103</p>
+												</td>
+												<td style="width: 12.189%;">
+													<p>872</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 10%;">
+													<p>Tree</p>
+												</td>
+												<td style="width: 13%;">
+													<p>118</p>
+												</td>
+												<td style="width: 12.189%;">
+													<p>219</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 10%;">
+													<p>Shrub</p>
+												</td>
+												<td style="width: 13%;">
+													<p>21</p>
+												</td>
+												<td style="width: 12.189%;">
+													<p>56</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 10%;">
+													<p><strong>Total</strong></p>
+												</td>
+												<td style="width: 13%;">
+													<p>285</p>
+												</td>
+												<td style="width: 12.189%;">
+													<p>1372</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div><!-- end col -->
+
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</div><!-- end section -->
+	<hr class="hr3">
+
+	<div id="overviews" class="section wb">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 blog-post-single">
+					<div class="blog-item">
+						<div class="image-blog">
+							<img src="images/hostel.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="post-content">
+							<hr class="hr3">
+							<div class="blog-title">
+								<h1>Hostel</h1>
+							</div>
+
+							<div class="blog-desc">
+
+								<blockquote class="default">
+
+									<p>The institute has separate hostel for boys and girls.</p>
+									<table style="width: 675px;">
+										<tbody>
+											<tr>
+												<td style="width: 205px;">
+													<p><strong>Details</strong></p>
+												</td>
+												<td style="width: 214px;">
+													<p><strong>Boys</strong></p>
+												</td>
+												<td style="width: 234px;">
+													<p><strong>Girls</strong></p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 205px;">
+													<p><strong>Location</strong></p>
+												</td>
+												<td style="width: 214px;">
+													<p>About 500 m from college</p>
+												</td>
+												<td style="width: 234px;">
+													<p>About 200 m from college</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 205px;">
+													<p><strong>Hostel fees</strong></p>
+												</td>
+												<td style="width: 214px;">
+													<p>1200/- per annum</p>
+												</td>
+												<td style="width: 234px;">
+													<p>1200/- per annum</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 205px;">
+													<p><strong>No. of rooms available</strong></p>
+												</td>
+												<td style="width: 214px;">
+													<p>36 rooms with dual capacity</p>
+												</td>
+												<td style="width: 234px;">
+													<p>55 rooms with dual capacity</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 205px;">
+													<p><strong>No. of maximum students capacity</strong></p>
+												</td>
+												<td style="width: 214px;">
+													<p>72</p>
+												</td>
+												<td style="width: 234px;">
+													<p>110</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 205px;">
+													<p><strong>At present</strong></p>
+												</td>
+												<td style="width: 214px;">
+													<p>&nbsp;</p>
+												</td>
+												<td style="width: 234px;">
+													<p>104 (UG &ndash; 100,PG-04)</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 205px;">
+													<p><strong>&nbsp;</strong></p>
+												</td>
+												<td style="width: 214px;">
+													<p>&nbsp;</p>
+												</td>
+												<td style="width: 234px;">
+													<p>&nbsp;</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 205px;">
+													<p><strong>Available facilities</strong></p>
+												</td>
+												<td style="width: 214px;">
+													<p>Each room has two bed coats, table, chair, fan and tube lights
+													</p>
+												</td>
+												<td style="width: 234px;">
+													<p>Each room has balcony, 2 bed coats, &nbsp;2 Cup boards, 2 chairs,
+														fan and tube lights</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 205px;">
+													<p>&nbsp;</p>
+												</td>
+												<td style="width: 214px;">
+													<p>Dining hall</p>
+												</td>
+												<td style="width: 234px;">
+													<p>Visitor&rsquo;s room, Dining hall, Mess, Prarthana hall, Reading
+														hall &ndash; 5, Indoor game&rsquo;s hall &ndash; 1, 4 sanitary
+														blocks on each floor &amp; each block has 3 Toilets &ndash; 3
+														Bathrooms &ndash; 2 wash basins, Big ground</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div><!-- end col -->
+
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</div><!-- end section -->
+	<hr class="hr3">
+
+	<div id="overviews" class="section wb">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 blog-post-single">
+					<div class="blog-item">
+						<div class="image-blog">
+							<img src="images/botanicaltour_2021.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="post-content">
+							<hr class="hr3">
+							<div class="blog-title">
+								<h1>Dravya Visit</h1>
+							</div>
+
+							<div class="blog-desc">
+
+								<blockquote class="default">
+									<p>The Local Botanical Tour was arranged by on upgraded Dravyaguna department 6th January 2021 at MS university, Vadodara.</p>
+									<p>All the PG scholars of the department along with the Faculty have taken benefit of the same.</p> 
+									<p>More than 200 medicinal plants were typically observed for the educational purpose.</p> 
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div><!-- end col -->
+
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</div><!-- end section -->
+	<hr class="hr3">
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-xs-12">
+					<div class="widget clearfix">
+						<div class="widget-title">
+							<h3>Connect with US</h3>
+						</div>
+						<p> visit our social media page </p>
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul><!-- end links -->
+						</div>
+					</div><!-- end clearfix -->
+				</div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+					<div class="widget clearfix">
+						<div class="widget-title">
+							<h3>Useful Links</h3>
+						</div>
+						<ul class="footer-links">
+							<li><a href="https://www.ayush.gov.in/">Ministry of AYUSH</a></li>
+							<li><a href="https://ayurveduniversity.edu.in/">Gujarat Ayurved University, Jamnagar</a>
+							</li>
+							<li><a href="https://www.ccimindia.org/">CCIM India</a></li>
+
+						</ul><!-- end links -->
+					</div><!-- end clearfix -->
+				</div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+					<div class="widget clearfix">
+						<div class="widget-title">
+							<h3>Contact Details</h3>
+						</div>
+
+						<ul class="footer-links">
+							<li><a href="mailto:ayu.baroda@gmail.com">ayu.baroda@gmail.com</a></li>
+							<li>Dhanvantari Marg, Ajwa road, Vadodara</li>
+							<li>Tel No: (0265) 2562004, Fax: (0265) 2520372</li>
+						</ul><!-- end links -->
+					</div><!-- end clearfix -->
+				</div><!-- end col -->
+
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</footer><!-- end footer -->
+
+	<div class="copyrights">
+		<div class="container">
+			<div class="footer-distributed">
+				<div class="footer-center">
+					<p class="footer-company-name">All Rights Reserved. &copy; 2021 &nbsp;&nbsp;<a href="#">GACV</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;Design By : <a href="https://tatvatechnovation.co.in/">Tatva</a></p>
+				</div>
+			</div>
+		</div><!-- end container -->
+	</div><!-- end copyrights -->
+
+	<a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/all.js"></script>
+	<!-- ALL PLUGINS -->
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>

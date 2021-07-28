@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>GACV</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Customer Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item active"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+						
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Research</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="dgr.html">DG Research</a>
+								<a class="dropdown-item" href="rsbk.html">RSBK Research</a>
+							</div>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Facilities</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="f-acad.html">Academic</a>
+								<a class="dropdown-item" href="f-clinical.html">Clinical</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="activities-awards.html">Awards & Activities</a></li>
+						<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                      <!--   <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Book Now</span></a></li> -->
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>About<span class="m_1">Government Ayurved College, Vadodara</span></h1>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section lb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>About College</h3>
+                    <p class="lead">Government Ayurved College, Vadodara (GACV) is an eminent institute which provides Teaching and consultancy in the field of Ayurveda since 1956. It is located in the centre of the cultural city Vadodara. </p>
+                </div>
+            </div><!-- end title -->
+        
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h4>Few details about GACV :</h4>
+                        <h2></h2>
+                        <p>This Institute is recognised by CCIM, New Delhi and affiliated with Gujarat Ayurved University, Jamnagar. Initially the institute was offering four years diploma course, D.S.A.C. (Diploma in Shuddha Ayurved Course) with intake capacity of 30 seats under the leadership of Vaidya Khandaparshu Chhatrasinhji Barot. Currently, the college is running Undergraduate (B.A.M.S.) and Postgraduate (M.D.) courses, with intake capacity of 75 UG and 13 PG students respectively.</p>
+
+                        <p>The college has an attached hospital having capacity of 100 beds which provides healthcare services through 12 different special OPDs through clinical specialists in different branches. </p>
+
+                       <!-- <a href="#" class="hover-btn-new orange"><span>Learn More</span></a> -->
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/about_02.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+			</div>
+			<div class="row align-items-center">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/about_03.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+				
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h4>And few more :</h4>
+                        <p>College has well-developed Departments, Classrooms, Library, Museums, Seminar Hall, Hostels and Herbal Garden. Hospital provides high-quality patient care by qualified and experienced clinicians with Laboratories, Physiotherapy unit, Wellness centre, Pharmacy, Homeopathy Unit along with trained Nursing staff. </p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+	<div class="hmv-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="inner-hmv">
+						<div class="icon-box-hmv"><i class="flaticon-achievement"></i></div>
+						<h3>Mission</h3>
+						<div class="tr-pa">M</div>
+						<p>● To focus on carving out the best Ayurveda practitioners and research scholars to serve the mankind.</p>
+                        <p>● To re-establish & nurture the basic principles of Ayurveda essentially for prevention, promotion and maintenance of the health.</p>
+                        <p>● To be a part of National Health Mission in collaboration with Government/private health care centres for providing the maximum benefit to the people.</p>
+                        <p>● To foster research activities in every dimension of Ayurveda by up-gradation of facilities.</p>
+                            
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="inner-hmv">
+						<div class="icon-box-hmv"><i class="flaticon-eye"></i></div>
+						<h3>Vision</h3>
+						<div class="tr-pa">V</div>
+						<p>● To establish an Institute of excellence in the field of Ayurveda education and research by providing excellent academic environment and health care services to the community within the Government Setup.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="inner-hmv">
+						<div class="icon-box-hmv"><i class="flaticon-history"></i></div>
+						<h3>Affiliation</h3>
+						<div class="tr-pa">A</div>
+						<p>● In charge Vice Chancellor : Prof. Anup B. Thakar</p>
+                        <p>● Registrar : Shri H. P. Zala</p>
+                        <p>● Gujarat Ayurved University, Chanakya Bhavan, Jamnagar- 361 008, (Gujarat) India</p>
+                        <p>● Phone – 0288 2556852, 0288 2555585 , Mail - registrar@ayurveduniversity.com</p>
+                        <p>● Gujarat Ayurved University Toll Free No. : 1800-233-7324 Office timing - 10.30 - 18.10 (IST)
+                            http://www.ayurveduniversity.edu.in/
+                            </p>
+                        <p>● CCIM : https://www.ccimindia.org/ </p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('images/parallax_04.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Message from Principal</h3>
+                <p>Dear Visitor, Greetings from Government Ayurved College & Hospital, Vadodara</p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/testi_01.png" alt="" class="img-fluid">
+                                <h4>Dr. Bharat D. Kalsariya </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Welcome !</h3>
+                                <p class="lead">Vadodara city is famed as an educational hub with many institutions of national and international repute, required Ayurved institution which has been fulfilled with the establishment of this institution. Started in 1956 by Govt. of Gujarat to serve Ayurveda knowledge with an intake of 30 students, it now has been increased to 75 (60 +15) in BAMS course and 13 in M.D. course of two subjects i.e. Rasashastra and Bhaishajya Kalpana and Dravyaguna from year 2020. 
+                                    </p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Affiliation & Administration</h3>
+                                <p class="lead">This institute is administered under office of Director AYUSH, Department of Health and Family Welfare, Govt. Of Gujarat and affiliated to Gujarat Ayurved University, Jamnagar. Students are selected merely on the basis of merit through a competitive exam. Our main motto is to provide excellent teaching and learning methodology through various pedagogical approaches to the Ayurved students. So, this institute becomes a preferred institution amongst undergraduate and postgraduate students for Ayurved education who are seeking admissions through All India Quota.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                 
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>Services to humanity</h3>
+                                <p class="lead">For healthcare services, the college has attached hospital having 100 beds capacity. It has well experienced consultant who provide estimable services to humanity through their updated gen, With these humble words, I invite you for surfing various segments of this site and kindly provide relevant comments and/or suggestions to further improve our services. </p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Our Efforts</h3>
+                                <p class="lead">Our technical experts are putting their best efforts to make this institution hub for fundamental, drug, pharmaceutical and clinical excellence to make Ayurveda evidence based. I am very proud to say that team of G.A C. & H., strive hard by constantly acquiring newer knowledge, skills and upgrade themselves to keep pace with global demand.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        
+                        <!-- end testimonial -->
+
+                        <!-- end testimonial -->
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <!-- end section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Connect with US</h3>
+                        </div>
+                        <p> visit our social media page </p>   
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul><!-- end links -->
+						</div>						
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="https://www.ayush.gov.in/">Ministry of AYUSH</a></li>
+                            <li><a href="https://ayurveduniversity.edu.in/">Gujarat Ayurved University, Jamnagar</a></li>
+                            <li><a href="https://www.ccimindia.org/">CCIM India</a></li>
+
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:ayu.baroda@gmail.com">ayu.baroda@gmail.com</a></li>
+                            <li>Dhanvantari Marg, Ajwa road, Vadodara</li>
+                            <li>Tel No: (0265) 2562004, Fax: (0265) 2520372</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2021 &nbsp;&nbsp;<a href="#">GACV</a> &nbsp;&nbsp;&nbsp;&nbsp;Design By : <a href="https://tatvatechnovation.co.in/">Tatva</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
